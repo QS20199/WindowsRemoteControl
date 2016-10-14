@@ -2,9 +2,10 @@
   "name": "windows_remote_control",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/QS20199/WindowsRemoteControl/issues"
   },
-  "homepage": "https://github.com/QS20199/WindowsRemoteControl#readme"
+  "homepage": "https://github.com/QS20199/WindowsRemoteControl#readme",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0"
+  }
 }
