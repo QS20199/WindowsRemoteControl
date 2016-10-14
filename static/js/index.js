@@ -1,6 +1,6 @@
 var baseUrl = "http://" + location.host;
 
-$("[data-action='shutdown'] button").on("tap click", function() {
+$("[data-action='shutdown'] button").on("tap", function() {
 	var second = $(this).attr('data-second');
 	$.ajax({
 		url: baseUrl + '/cmd/shutdown/' + second,
@@ -8,7 +8,7 @@ $("[data-action='shutdown'] button").on("tap click", function() {
 	})
 })
 
-$("[data-action='volume'] button").on("tap click", function() {
+$("[data-action='volume'] button").on("tap", function() {
 	var delta = $(this).attr('data-delta');
 	$.ajax({
 		url: baseUrl + '/cmd/volume/' + delta,
@@ -16,7 +16,7 @@ $("[data-action='volume'] button").on("tap click", function() {
 	})
 })
 
-$("[data-action='music'] button").on("tap click", function() {
+$("[data-action='music'] button").on("tap", function() {
 	var action = $(this).attr('data-action');
 	$.ajax({
 		url: baseUrl + '/cmd/music/' + action,

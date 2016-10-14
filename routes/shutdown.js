@@ -6,8 +6,10 @@ module.exports = function*() {
 
 	if (secondsBeforeShutown == -1) { //取消关机
 		child_process.exec("shutdown -a");
+		console.log("power control: shotdown -a")
 	} else {
 		child_process.exec(`shutdown -s -t ${secondsBeforeShutown}`);
+		console.log(`power control: shutdown -s -t ${secondsBeforeShutown}`)
 	}
 
 	this.response.status = 200;
