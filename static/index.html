@@ -3,32 +3,32 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>遥控电脑</title>
+		<title>Remote Control</title>
 		<link rel="stylesheet" href="./css/bootstrap.css">
 	</head>
 	<body>
 		<div class="container-fluid" style="margin-top: 20px">
 			<div class="row" data-action="shutdown">
 				<div class="col-xs-6">
-					<button type="button" class="btn btn-primary btn-lg center-block" data-second="5">5秒后关机</button>
+					<button type="button" class="btn btn-primary btn-lg center-block" data-second="3">shutdown -s -t 3</button>
 				</div>
 				<div class="col-xs-6">
-					<button type="button" class="btn btn-primary btn-lg center-block" data-second="-1">终止关机</button>
+					<button type="button" class="btn btn-primary btn-lg center-block" data-second="-1">shutdown -a</button>
 				</div>
 			</div>
 
-			<br>
+			<hr>
 
 			<div class="row" data-action="volume">
 				<div class="col-xs-6">
-					<button type="button" class="btn btn-primary btn-lg center-block" data-delta="2000">Volume Up</button>
+					<button type="button" class="btn btn-primary btn-lg center-block" data-delta="2000">volume up</button>
 				</div>
 				<div class="col-xs-6">
-					<button type="button" class="btn btn-primary btn-lg center-block" data-delta="-2000">Volume Down</button>
+					<button type="button" class="btn btn-primary btn-lg center-block" data-delta="-2000">volume down</button>
 				</div>
 			</div>
 
-			<br>
+			<hr>
 
 			<div class="row" data-action="music">
 				<div class="col-xs-6">

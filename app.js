@@ -8,6 +8,6 @@ app.use(serve('./static/'));
 //cgi路由表
 app.use(require('./routes/routerConfig').routes());
 
-app.listen(3000);
+app.listen(12800);
  
-console.log('listening on port 3000');
+console.log('listening on port 12800');
