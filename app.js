@@ -4,8 +4,9 @@ var app = koa();
 
 // 静态资源服务器 
 app.use(serve('./static/'));
- 
-app.use(require('./routes/shutdown').routes());
+
+//cgi路由表
+app.use(require('./routes/routerConfig').routes());
 
 app.listen(3000);
  

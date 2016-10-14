@@ -1,7 +1,7 @@
-const router = require('koa-router')();
 const child_process = require('child_process');
 
-router.post('/cmd/shutdown/:second', function*() {
+// router.post('/cmd/shutdown/:second', require('./shutdown'));
+module.exports = function*() {
 	let secondsBeforeShutown = Number(this.params.second);
 
 	if (secondsBeforeShutown == -1) { //取消关机
@@ -11,7 +11,4 @@ router.post('/cmd/shutdown/:second', function*() {
 	}
 
 	this.response.status = 200;
-});
-
-
-module.exports = exports = router;
+}
