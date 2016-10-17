@@ -23,3 +23,11 @@ $("[data-action='music'] button").on("tap", function() {
 		type: 'post'
 	})
 })
+
+$("[data-action='openApp'] button").on("tap", function() {
+	var appName = $(this).attr('data-app-name');
+	$.ajax({
+		url: baseUrl + '/cmd/openApp/' + appName,
+		type: 'post'
+	})
+})

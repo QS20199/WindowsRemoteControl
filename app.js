@@ -6,7 +6,7 @@ var app = koa();
 app.use(serve('./static/'));
 
 //cgi路由表
-app.use(require('./routes/routerConfig').routes());
+app.use(require('./routes/routerTable').routes());
 
 app.listen(12800);
  
